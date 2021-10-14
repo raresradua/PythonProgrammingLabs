@@ -99,7 +99,10 @@ def ex_7(*list_of_numbers):
         :return: tuple( nr of palindromes, greatest palindrome)
     """
     palindromes = [palindrom for palindrom in list_of_numbers if str(palindrom) == str(palindrom)[::-1]]
-    return tuple((len(palindromes), max(palindromes)))
+    if len(palindromes):
+        return tuple((len(palindromes), max(palindromes)))
+    else:
+        return tuple((0, 0))
 
 
 def ex_8(list_of_strings, flag=True, x=1):
