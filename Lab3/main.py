@@ -1,3 +1,8 @@
+"""
+    Laboratory 3 - Python Programming
+"""
+
+
 def ex_1(a, b):
     """
         Write a function that receives as parameters two lists a and b and
